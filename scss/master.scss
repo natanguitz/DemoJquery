@@ -1,0 +1,94 @@
+@import "variabler";
+@import "mixings";
+
+@include MyStart;;
+button{
+  width: 45%;
+}
+
+.BookButton{
+  @include BookButton;
+}
+
+#formbox{
+  display: none;
+}
+
+.header{
+  color: $primary-color;
+  background-color: $primary-background;
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  font-size: 50px;
+  padding: 30px 0;
+  font-family: 'Yellowtail', cursive;
+
+}
+
+.mycontent{
+  min-height: 400px;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer{
+  min-height: 100px;
+  background-color: $primary-color;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  min-width: 200px;
+  padding: 5px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+#book-image img {
+  height: 350px;
+  width: auto;
+  max-width: 300px;
+}
+
+#book-container-header{
+  background-color: $primary-color;
+  color: $basic-text-color;
+  padding: 5px;
+}
+
+#newbook{
+  text-align: left;
+}
+#btn-newbook{
+  background-color: $accent-color;
+  color: $basic-text-color;
+  font-weight: bold;
+  height: 40px;
+  max-width: 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.newbook-box{
+  display: none;
+}

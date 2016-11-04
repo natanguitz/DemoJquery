@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/build/master.css" media="screen" title="no title">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet">
+  <title>MyApp</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      Book App Demo
+    </header>
+    <section class="mycontent">
+      <article id="newbook">
+        <button type="button" id="btn-newbook">+</button>
+        <div class="newbook-box">
+          <p><input type="text" id="book-title">Title</p>
+          <p><input type="text" id="book-author">Author</p>
+          <p><input type="text" id="book-url">Image URL</p>
+          <button type="button" class="BookButton" id="sendnewbook">Save</button>
+          <button type="button" class="BookButton" id="cancelnewbook">Cancel</button>
+        </div>
+      </article>
+      <article class="book flex-container">
+
+      </article>
+    </section>
+    <footer class="footer">
+      footer
+    </footer>
+  </div>
+  <script type="text/javascript" src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/build/master.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@mixin MyStart(){
+	html{
+    font-family: $primary-font;
+    color: $primary-text;
+	}
+}
+
+@mixin BookButton(){
+	color: $basic-text-color;
+	background-color: $accent-color;
+	width: 45%;
+	border: none;
+	padding: 3px;
+	cursor: pointer;
+
+}
